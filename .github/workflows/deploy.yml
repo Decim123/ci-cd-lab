@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}  
           key: ${{ secrets.SSH_PRIVATE_KEY }}  
           script: |
-            cd /opt/my-fastapi-app
+            cd /opt/ci-cd-lab
             git pull origin main
             docker-compose down
             docker-compose up -d --build
