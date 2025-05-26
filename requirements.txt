@@ -2,4 +2,4 @@ fastapi
 uvicorn[standard]
 python-multipart
 jinja2
-pydantic
+pydantic==2.5.0
