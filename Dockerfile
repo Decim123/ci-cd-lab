@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 RUN ulimit -s unlimited && \
     ulimit -n 65536
-    
+
 # рабочая директория
 WORKDIR /app
 
@@ -10,7 +10,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Установка зависимостей
-RUN pip install -r requirements.txt
+RUN pip install --progress-bar off -r requirements.txt
 
 # Копирование приложения
 COPY ./app ./app
