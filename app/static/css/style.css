@@ -1,0 +1,18 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.item-type-fields {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-actions {
+    white-space: nowrap;
+}
