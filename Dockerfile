@@ -1,5 +1,8 @@
 FROM python:3.11-slim
 
+RUN ulimit -s unlimited && \
+    ulimit -n 65536
+    
 # рабочая директория
 WORKDIR /app
 
